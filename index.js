@@ -3,8 +3,7 @@ const app = express()
 app.use(express.json())
 
 app.get("/",(req,res)=>{
-    console.log(process.env.API_KEY)
-    res.send(process.env.API_KEY)
+    res.send("hello")
 })
 
 app.listen(8000,(req,res)=>{
